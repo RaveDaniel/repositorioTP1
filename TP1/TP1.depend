@@ -11,3 +11,18 @@
 	<stdlib.h>
 	"funcionesCalculadora.h"
 
+1554442198 source:c:\users\daniel\desktop\repositoriotp1\tp1\funcionescalculadora.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesCalculadora.h"
+	<string.h>
+	<ctype.h>
+
+1554441801 c:\users\daniel\desktop\repositoriotp1\tp1\funcionescalculadora.h
+
+1554442049 source:c:\users\daniel\desktop\repositoriotp1\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesCalculadora.h"
+	<string.h>
+

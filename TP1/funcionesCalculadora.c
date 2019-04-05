@@ -1,37 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funcionesCalculadora.h"
-
+#include <string.h>
+#include <ctype.h>
 // Esta funcion va a realizar la suma de "a" y "b".
-int Suma(int a, int b)
+int suma(int a, int b)
 {
     int respuesta = 0;
     respuesta = a + b;
     return respuesta;
 }
 // Esta funcion va a realizar la resta de "a" y "b".
-int Resta(int a, int b)
+int resta(int a, int b)
 {
    int respuesta = 0;
    respuesta = a - b;
    return respuesta;
 }
 // Esta funcion va a realizar la multiplicacion  de "a" y "b".
-int Multiplicacion(int a, int b)
+int multiplicacion(int a, int b)
 {
      int respuesta = 0;
      respuesta = a * b;
      return respuesta;
 }
 // Esta funcion va a realizar la division de "a" y "b".
-int Division(int a, int b)
+int division(int a, int b)
 {
      int respuesta = 0;
      respuesta = a / b;
      return respuesta;
 }
 // Esta funcion va a realizar la factorial de "a" y el de "b".
-int Factorial(int a)
+int factorial(int a)
 {
      int i;
      int respuesta = 1;
@@ -52,3 +53,16 @@ int Factorial(int a)
         }
      return respuesta;
 }*/
+int esNumerica(char valorA[])//esta funcion valida que sean solo numeros
+{
+    int i;
+    for(i=0; i<strlen(valorA); i++)
+    {
+        if(!(isdigit(valorA[i])))
+        {
+            printf("\nError. Ingresa solo numeros :\n");
+            return 0;
+        }
+    }
+    return 1;
+}
